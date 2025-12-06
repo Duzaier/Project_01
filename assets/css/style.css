@@ -23,6 +23,15 @@ a {
   text-decoration: none;
 }
 
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.27;
+  letter-spacing: -0.76px;
+}
+
 .btn {
   display: inline-block;
   min-width: 118px;
@@ -92,11 +101,11 @@ a {
 }
 
 .nav li.active a::after {
+  content: "";
   position: absolute;
   left: 21px;
   bottom: 6px;
   display: block;
-  content: "";
   width: 12px;
   height: 2px;
   border-radius: 1px;
@@ -278,4 +287,51 @@ a {
 
 .hero .stats strong:nth-child(2) {
   margin-left: 28px;
+}
+
+/* ========================= Popular ========================= */
+.popular {
+  padding: 65px 0;
+  background-color: #ff9c62;
+  margin-top: 135px;
+}
+
+.popular-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popular-top .desc {
+  margin-top: 16px;
+  width: 458px;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  line-height: 1.67;
+}
+
+.popular-top .controls {
+  display: flex;
+  gap: 18px;
+}
+
+.popular-top .control-btn img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.popular-top .control-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--primary-color);
+}
+
+.popular-top .control-btn:hover {
+  background-color: #171100;
+  cursor: pointer;
 }
