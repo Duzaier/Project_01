@@ -52,7 +52,7 @@ a {
 
 .main-content {
   width: 1170px;
-  min-width: calc(100% - 360px);
+  min-width: calc(100% - 350px);
   margin-left: auto;
   margin-right: auto;
 }
@@ -453,8 +453,16 @@ a {
   background-color: #2e2100;
 }
 
-.feedback-item {
+.feedback-list {
   display: flex;
+  overflow: hidden;
+}
+
+.feedback-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
 }
 
 .feedback-item .avatar {
@@ -500,7 +508,6 @@ a {
 
 .feedback-item .content {
   width: 66%;
-  margin-left: auto;
 }
 
 .feedback-item .content .open-quotes {
