@@ -15,7 +15,6 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
-  height: 10000px;
 }
 
 /* ========================= Common ========================= */
@@ -707,4 +706,90 @@ a {
 .blogs .dot.active {
   background-color: var(--primary-color);
   cursor: default;
+}
+
+/* ========================= Footer ========================= */
+.footer {
+  background-color: #2e2100;
+  padding: 16px 135px 0;
+}
+
+.footer .row {
+  display: flex;
+  padding-bottom: 38px;
+  border-bottom: 1px solid #59554b;
+}
+
+.footer .row .column {
+  width: 21.6%;
+}
+
+.footer .row .column:first-child {
+  width: 35%;
+}
+
+.footer .icon {
+  width: 15px;
+  height: 15px;
+}
+
+.footer .logo {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+}
+
+.footer .desc {
+  margin-top: 18px;
+  max-width: 267px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+
+.footer .social {
+  display: flex;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.footer .title {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+  border-bottom: 1px solid #59554b;
+  display: inline-block;
+  padding-bottom: 14px;
+  padding-right: 48px;
+}
+.footer .list {
+  margin-top: 28px;
+}
+
+.footer .list a {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+
+.footer .list li:last-child a {
+  margin-bottom: 0;
+}
+
+.footer .list strong {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.86;
+}
+
+.footer .copyright {
+  text-align: center;
+  padding: 28px 0;
+  color: #887d74;
+  font-size: 1.4rem;
+  line-height: 1.86;
 }
